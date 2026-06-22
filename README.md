@@ -61,7 +61,7 @@ DevOps (Optional)
 2️⃣ Backend Setup
 -  cd backend
 - pip install -r requirements.txt
-- python -m uvicorn app:app --reload
+- python -m uvicorn backend.app:app --reload
 
 Backend runs at:
 
