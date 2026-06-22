@@ -34,6 +34,10 @@ graph TD
 
 # ⚙️ Tech Stack
 
+Clone Repository
+- git clone https://github.com/Muqaddas1617/ai-sre-copilot.git
+- cd ai-sre-copilot
+- 
 Backend
 - FastAPI
 - Python
@@ -111,4 +115,5 @@ The system evaluates deployments using:
 ---
 👨‍💻 Author
 Muqaddas Saad
+GitHub: https://github.com/Muqaddas1617
 ---
