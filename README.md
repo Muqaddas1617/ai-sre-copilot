@@ -104,9 +104,11 @@ The system evaluates deployments using:
 - Human-in-the-loop decision system
 - Audit-ready logging mechanism
 ---
-👨‍💻 Author
-Muqaddas Saad
----
+
     🚀 Final Note
 
     This project demonstrates a production-grade AI SRE Copilot system designed for modern DevOps pipelines, incident prevention, and deployment safety automation.
+---
+👨‍💻 Author
+Muqaddas Saad
+---
