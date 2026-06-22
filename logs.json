@@ -1,0 +1,201 @@
+[
+  {
+    "input": "database changes",
+    "risk_score": 70,
+    "risk_reason": "Database change",
+    "incident": "NO INCIDENT DETECTED",
+    "decision": "HUMAN APPROVAL REQUIRED",
+    "timestamp": 1782086345.503371
+  },
+  {
+    "input": "\"Detected schema migration + payment service dependency \u2192 high blast radius\"",
+    "risk_score": 50,
+    "risk_reason": "Migration involved",
+    "incident": "NO INCIDENT DETECTED",
+    "decision": "AUTO APPROVED",
+    "timestamp": 1782086407.279775
+  },
+  {
+    "id": 3,
+    "input": "production error",
+    "risk_score": 20,
+    "risk_reason": "Minor change",
+    "incident": "NO INCIDENT DETECTED",
+    "decision": "AUTO APPROVED",
+    "timestamp": 1782086630.0148418
+  },
+  {
+    "id": 4,
+    "input": "Database chnge",
+    "risk_score": 40,
+    "risk_reason": "High risk keyword detected: database",
+    "incident": "NO INCIDENT DETECTED",
+    "decision": "AUTO APPROVED",
+    "timestamp": 1782086830.6874402
+  },
+  {
+    "id": 5,
+    "input": "payment failed in production service",
+    "risk_score": 80,
+    "risk_reason": "High risk keyword detected: production | High risk keyword detected: payment",
+    "incident": [
+      "CRITICAL INCIDENT",
+      "CRITICAL pattern detected: payment failed | HIGH severity indicator: failed"
+    ],
+    "decision": "BLOCKED - CRITICAL RISK",
+    "timestamp": 1782086968.3071692
+  },
+  {
+    "id": 6,
+    "input": "payment failed in production service",
+    "risk_score": 80,
+    "risk_reason": "High risk keyword detected: production | High risk keyword detected: payment",
+    "incident": "CRITICAL INCIDENT",
+    "decision": "BLOCKED - CRITICAL RISK",
+    "timestamp": 1782087193.9479647
+  },
+  {
+    "id": 7,
+    "input": "payment failed in production service",
+    "risk_score": 80,
+    "risk_reason": "High risk keyword detected: production | High risk keyword detected: payment",
+    "incident": "CRITICAL INCIDENT",
+    "decision": "BLOCKED - CRITICAL RISK",
+    "timestamp": 1782087296.2990625
+  },
+  {
+    "id": 8,
+    "input": "payment failed in production service",
+    "risk_score": 80,
+    "risk_reason": "High risk keyword detected: production | High risk keyword detected: payment",
+    "incident": "CRITICAL INCIDENT",
+    "incident_reason": "CRITICAL pattern detected: payment failed | HIGH severity indicator: failed",
+    "incident_score": 100,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "trace": {
+      "risk_reason": "High risk keyword detected: production | High risk keyword detected: payment",
+      "incident_reason": "CRITICAL pattern detected: payment failed | HIGH severity indicator: failed"
+    },
+    "timestamp": 1782087436.798067
+  },
+  {
+    "id": 9,
+    "input": "payment failed in production service",
+    "risk_score": 80,
+    "risk_reason": "High risk keyword detected: production | High risk keyword detected: payment",
+    "incident": "CRITICAL INCIDENT",
+    "incident_reason": "CRITICAL pattern detected: payment failed | HIGH severity indicator: failed",
+    "incident_score": 100,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "trace": {
+      "risk_reason": "High risk keyword detected: production | High risk keyword detected: payment",
+      "incident_reason": "CRITICAL pattern detected: payment failed | HIGH severity indicator: failed"
+    },
+    "timestamp": 1782087679.9062424
+  },
+  {
+    "id": 10,
+    "input": "payment failed in production service",
+    "risk_score": 80,
+    "risk_reason": "High risk keyword detected: production | High risk keyword detected: payment",
+    "incident": "CRITICAL INCIDENT",
+    "incident_reason": "CRITICAL pattern detected: payment failed | HIGH severity indicator: failed",
+    "incident_score": 100,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "trace": {
+      "risk_reason": "High risk keyword detected: production | High risk keyword detected: payment",
+      "incident_reason": "CRITICAL pattern detected: payment failed | HIGH severity indicator: failed"
+    },
+    "timestamp": 1782088024.0606823
+  },
+  {
+    "id": 11,
+    "input": "payment failed in production service",
+    "risk_score": 80,
+    "risk_reason": "High risk keyword detected: production | High risk keyword detected: payment",
+    "incident": "CRITICAL INCIDENT",
+    "incident_reason": "CRITICAL pattern detected: payment failed | HIGH severity indicator: failed",
+    "incident_score": 100,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "trace": {
+      "risk_reason": "High risk keyword detected: production | High risk keyword detected: payment",
+      "incident_reason": "CRITICAL pattern detected: payment failed | HIGH severity indicator: failed"
+    },
+    "timestamp": 1782088179.767951
+  },
+  {
+    "id": 12,
+    "input": "payment failed in production service 2",
+    "risk_score": 80,
+    "risk_reason": "High risk keyword detected: production | High risk keyword detected: payment",
+    "incident": "CRITICAL INCIDENT",
+    "incident_reason": "CRITICAL pattern detected: payment failed | HIGH severity indicator: failed",
+    "incident_score": 100,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "trace": {
+      "risk_reason": "High risk keyword detected: production | High risk keyword detected: payment",
+      "incident_reason": "CRITICAL pattern detected: payment failed | HIGH severity indicator: failed"
+    },
+    "timestamp": 1782088217.64265
+  },
+  {
+    "id": 13,
+    "input": "payment failed in production service ",
+    "risk_score": 80,
+    "risk_reason": "High risk keyword detected: production | High risk keyword detected: payment",
+    "incident": "CRITICAL INCIDENT",
+    "incident_reason": "CRITICAL pattern detected: payment failed | HIGH severity indicator: failed",
+    "incident_score": 100,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "trace": {
+      "risk_reason": "High risk keyword detected: production | High risk keyword detected: payment",
+      "incident_reason": "CRITICAL pattern detected: payment failed | HIGH severity indicator: failed"
+    },
+    "timestamp": 1782088224.411271
+  },
+  {
+    "id": 14,
+    "input": "database",
+    "risk_score": 40,
+    "risk_reason": "High risk keyword detected: database",
+    "incident": "NO INCIDENT DETECTED",
+    "incident_reason": "System healthy",
+    "incident_score": 0,
+    "decision": "REVIEW RECOMMENDED",
+    "trace": {
+      "risk_reason": "High risk keyword detected: database",
+      "incident_reason": "System healthy"
+    },
+    "timestamp": 1782088233.3215563
+  },
+  {
+    "id": 15,
+    "input": "database prod",
+    "risk_score": 40,
+    "risk_reason": "High risk keyword detected: database",
+    "incident": "NO INCIDENT DETECTED",
+    "incident_reason": "System healthy",
+    "incident_score": 0,
+    "decision": "REVIEW RECOMMENDED",
+    "trace": {
+      "risk_reason": "High risk keyword detected: database",
+      "incident_reason": "System healthy"
+    },
+    "timestamp": 1782088555.7245526
+  },
+  {
+    "id": 16,
+    "input": "database prod",
+    "risk_score": 95,
+    "risk_reason": "Database change detected | Production environment impact | High blast radius: production database",
+    "incident": "NO INCIDENT DETECTED",
+    "incident_reason": "Critical DB production risk",
+    "incident_score": 30,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "trace": {
+      "risk_reason": "Database change detected | Production environment impact | High blast radius: production database",
+      "incident_reason": "Critical DB production risk"
+    },
+    "timestamp": 1782088851.5618067
+  }
+]
