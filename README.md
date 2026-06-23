@@ -1,114 +1,116 @@
-# 🚀 AI SRE Copilot — Production Deployment Risk Engine
+# 🚀 AI SRE Copilot
 
-An AI-powered Site Reliability Engineering (SRE) Copilot that analyzes deployment risk, detects incidents, and simulates human-in-the-loop approval workflows.
+AI SRE Copilot is a full-stack agentic application for deployment governance. It helps teams review risky production changes before release by combining separate agents for risk analysis, incident detection, approval routing, memory lookup, and explanation generation.
 
----
+## Why this project is valuable
 
-# 🧠 Features
+This project addresses a real operational challenge: production deployments can be risky, especially when they involve databases, payments, or customer-facing systems. Instead of relying only on manual inspection, AI SRE Copilot produces a structured safety review that shows risk, incident severity, and approval guidance.
 
-- ⚡ Real-time deployment risk scoring
-- 🚨 Incident detection engine (production-aware)
-- 🧠 Context-aware AI logic (database, payment, production)
-- 👨‍💻 Human approval decision system
-- 💾 Persistent logs (JSON memory system)
-- 📊 React dashboard UI
-- 🐳 Docker-ready backend
-- 🔌 REST API (FastAPI)
+## Capstone fit
 
----
+This project fits the Kaggle capstone well because it demonstrates:
 
-# 🏗️ System Architecture
+- Multi-agent design: distinct agents handle deployment risk assessment, incident analysis, approval decisions, memory, and explanation.
+- Security awareness: sensitive values such as passwords, tokens, and API keys are redacted before persistence.
+- Deployability: the system runs as a FastAPI backend with a React frontend and can be containerized with Docker.
+- Practical business value: it supports safer change management for teams operating critical systems.
 
-```mermaid id="arch1"
-graph TD
-    A[React Frontend] --> B[FastAPI Backend]
+## Architecture
+
+```mermaid
+flowchart TD
+    A[React Dashboard] --> B[FastAPI Backend]
     B --> C[Risk Analyzer Agent]
     B --> D[Incident Analyzer Agent]
-    B --> E[Approval Engine]
-    B --> F[Memory Logs - JSON]
-    C --> B
-    D --> B
-    E --> B
+    B --> E[Approval Agent]
+    B --> F[Memory Agent]
+    B --> G[Explanation Agent]
+    C --> E
+    D --> E
+    F --> E
+    G --> B
+    B --> H[JSON Audit Log]
 ```
----
 
-# ⚙️ Tech Stack
+## How the agents work
 
-Backend
-- FastAPI
-- Python
-- Uvicorn
+The project is organized around five specialized agent roles:
 
-Frontend
-- React.js
-- JavaScript (ES6+)
+- RiskAnalyzerAgent: evaluates deployment risk using database/schema changes, production impact, payment dependencies, rollback complexity, and time-window signals.
+- IncidentAnalyzerAgent: classifies incident severity using failure signals, production impact, payment/checkout disruption, latency issues, and rollback complexity.
+- ApprovalAgent: decides whether a deployment should be auto-approved, manually reviewed, or blocked based on the stronger of risk and incident severity.
+- MemoryAgent: stores prior deployment requests and retrieves similar history for context.
+- ExplanationAgent: turns the analysis into a concise structured rationale with risk factors, incident signals, and the final decision.
 
-Storage
-- JSON file-based persistent logging
+## Key features
 
-DevOps (Optional)
-- Docker support
-- Cloud-ready deployment (Render / AWS / GCP compatible)
+- Deployment-risk scoring for change requests
+- Incident severity classification
+- Approval guidance for production changes
+- Memory-based history lookup for similar prior requests
+- Structured explanation layer for transparent reasoning
+- Structured audit logs for traceability
+- Sensitive-data redaction for safety
+- Demo-friendly UI with sample scenarios
+- Docker-ready deployment path
 
----
+## Tech stack
 
-# 🚀 How to Run the Project
+- Backend: FastAPI, Python
+- Frontend: React, JavaScript
+- Storage: JSON-based logs
+- Deployment: Docker, Uvicorn
 
-1️⃣ Clone Repository
- - git clone https://github.com/your-username/ai-sre-copilot.git
--  cd ai-sre-copilot
+## Local setup
 
-2️⃣ Backend Setup
--  cd backend
-- pip install -r requirements.txt
-- python -m uvicorn app:app --reload
+### Backend
 
-Backend runs at:
+```bash
+cd backend
+pip install -r ../requirement.txt
+uvicorn app:app --reload --port 8000
+```
 
-- http://127.0.0.1:8000
-- http://127.0.0.1:8000/docs
+### Frontend
 
-3️⃣ Frontend Setup
-- cd frontend
-- npm install
-- npm start
+```bash
+cd frontend
+npm install
+npm start
+```
 
-Frontend runs at:
+## Security design
 
-- http://localhost:3000
+The backend sanitizes user input before analysis and logging. This helps prevent accidental leakage of secrets such as passwords, tokens, or API keys.
 
----
-🧠 Core Intelligence Logic
+## Example Input
 
-The system evaluates deployments using:
-- Keyword-based risk scoring
-- Incident severity detection engine
-- Business-critical system awareness
-- Production impact heuristics
-- Approval threshold logic
----
-💡 Future Enhancements
-- ML-based risk prediction model
-- PostgreSQL / MongoDB integration
-- Slack / Microsoft Teams approval integration
-- Kubernetes deployment support
-- Prometheus + Grafana monitoring
-- JWT authentication system
----
+```text
+Deploy a small database schema change to production with rollback support.
+```
 
-🏆 Project Highlights
+## Example Output
 
-- Production-style system design
-- Real-world DevOps workflow simulation
-- Full-stack AI agent architecture
-- Human-in-the-loop decision system
-- Audit-ready logging mechanism
----
+```json
+{
+  "risk_score": 35,
+  "incident": "MEDIUM INCIDENT",
+  "decision": "REVIEW RECOMMENDED"
+}
+```
 
-    🚀 Final Note
+## Capstone evidence
 
-    This project demonstrates a production-grade AI SRE Copilot system designed for modern DevOps pipelines, incident prevention, and deployment safety automation.
----
-👨‍💻 Author
+This project demonstrates at least three important capstone concepts:
+
+1. Agent / multi-agent system: separate agents for risk and incident reasoning.
+2. Security features: redaction of sensitive values before persistence.
+3. Deployability: FastAPI + React + Docker workflow.
+
+## Demo idea
+
+A short demo video can show a deployment request being submitted, the agents analyzing it, and the system producing a structured review with risk factors, incident signals, and a final approval decision.
+
+## Author
+
 Muqaddas Saad
----

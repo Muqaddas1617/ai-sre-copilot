@@ -227,5 +227,480 @@
       "incident_reason": "System healthy"
     },
     "timestamp": 1782166199.3654687
+  },
+  {
+    "id": 19,
+    "input": "API crash",
+    "risk_score": 0,
+    "risk_reason": "",
+    "incident": "NO INCIDENT DETECTED",
+    "incident_reason": "System healthy",
+    "incident_score": 0,
+    "decision": "AUTO APPROVED",
+    "trace": {
+      "risk_reason": "",
+      "incident_reason": "System healthy"
+    },
+    "timestamp": 1782170838.4191856
+  },
+  {
+    "id": 20,
+    "input": "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]",
+    "risk_score": 95,
+    "risk_reason": "Database change detected | Production environment impact | High blast radius: production database",
+    "incident": "NO INCIDENT DETECTED",
+    "incident_reason": "Critical DB production risk",
+    "incident_score": 30,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "trace": {
+      "risk_reason": "Database change detected | Production environment impact | High blast radius: production database",
+      "incident_reason": "Critical DB production risk"
+    },
+    "timestamp": 1782245368.8227544
+  },
+  {
+    "id": 21,
+    "input": "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]",
+    "risk_score": 80,
+    "risk_reason": "Database or schema change detected | Production environment impact | High blast radius: production database change",
+    "incident": "HIGH INCIDENT",
+    "incident_reason": "Production impact detected | Critical database-to-production risk",
+    "incident_score": 50,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "trace": {
+      "risk_reason": "Database or schema change detected | Production environment impact | High blast radius: production database change",
+      "incident_reason": "Production impact detected | Critical database-to-production risk"
+    },
+    "timestamp": 1782245861.450178
+  },
+  {
+    "id": 22,
+    "input": "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]",
+    "risk_score": 80,
+    "risk_reason": "Database or schema change detected | Production environment impact | High blast radius: production database change",
+    "incident": "HIGH INCIDENT",
+    "incident_reason": "Production impact detected | Critical database-to-production risk",
+    "incident_score": 50,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "trace": {
+      "risk_reason": "Database or schema change detected | Production environment impact | High blast radius: production database change",
+      "incident_reason": "Production impact detected | Critical database-to-production risk"
+    },
+    "timestamp": 1782246182.5899637
+  },
+  {
+    "id": 23,
+    "input": "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]",
+    "risk_score": 80,
+    "risk_reason": "Database or schema change detected | Production environment impact | High blast radius: production database change",
+    "incident": "HIGH INCIDENT",
+    "incident_reason": "Production impact detected | Critical database-to-production risk",
+    "incident_score": 50,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "trace": {
+      "risk_reason": "Database or schema change detected | Production environment impact | High blast radius: production database change",
+      "incident_reason": "Production impact detected | Critical database-to-production risk"
+    },
+    "timestamp": 1782246191.966384
+  },
+  {
+    "id": 24,
+    "input": "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]",
+    "risk_score": 80,
+    "risk_reason": "Database or schema change detected | Production environment impact | High blast radius: production database change",
+    "incident": "HIGH INCIDENT",
+    "incident_reason": "Production impact detected | Critical database-to-production risk",
+    "incident_score": 50,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "trace": {
+      "risk_reason": "Database or schema change detected | Production environment impact | High blast radius: production database change",
+      "incident_reason": "Production impact detected | Critical database-to-production risk"
+    },
+    "timestamp": 1782246449.7225554
+  },
+  {
+    "id": 25,
+    "input": "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]",
+    "risk_score": 80,
+    "risk_reason": "Database or schema change detected | Production environment impact | High blast radius: production database change",
+    "incident": "HIGH INCIDENT",
+    "incident_reason": "Production impact detected | Critical database-to-production risk",
+    "incident_score": 50,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "trace": {
+      "risk_reason": "Database or schema change detected | Production environment impact | High blast radius: production database change",
+      "incident_reason": "Production impact detected | Critical database-to-production risk"
+    },
+    "timestamp": 1782246571.945633
+  },
+  {
+    "id": 26,
+    "input": "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]",
+    "risk_score": 80,
+    "risk_reason": "Database or schema change detected | Production environment impact | High blast radius: production database change",
+    "incident": "HIGH INCIDENT",
+    "incident_reason": "Production impact detected | Critical database-to-production risk",
+    "incident_score": 50,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "trace": {
+      "risk_reason": "Database or schema change detected | Production environment impact | High blast radius: production database change",
+      "incident_reason": "Production impact detected | Critical database-to-production risk"
+    },
+    "timestamp": 1782246648.604556
+  },
+  {
+    "id": 27,
+    "input": "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]",
+    "risk_score": 80,
+    "risk_reason": "Database or schema change detected | Production environment impact | High blast radius: production database change",
+    "incident": "HIGH INCIDENT",
+    "incident_reason": "Production impact detected | Critical database-to-production risk",
+    "incident_score": 50,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "history_matches": [
+      "deploy database changes to prod with password=[redacted] and token=[redacted]"
+    ],
+    "explanation": "Risk evaluation for Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]: score 80 and decision 'BLOCKED - CRITICAL RISK'. The system flags this as a high-risk deployment because the change could impact critical services.",
+    "trace": {
+      "risk_reason": "Database or schema change detected | Production environment impact | High blast radius: production database change",
+      "incident_reason": "Production impact detected | Critical database-to-production risk"
+    },
+    "timestamp": 1782246990.6865997
+  },
+  {
+    "id": 28,
+    "input": "payment failed in production service ",
+    "risk_score": 55,
+    "risk_reason": "Production environment impact | Payment or checkout workflow affected",
+    "incident": "CRITICAL INCIDENT",
+    "incident_reason": "Observed failure or error signal | Critical payment or checkout disruption | Production impact detected",
+    "incident_score": 100,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "history_matches": [
+      "database",
+      "payment failed in production service ",
+      "production error",
+      "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]",
+      "database prod",
+      "\"Detected schema migration + payment service dependency \u2192 high blast radius\"",
+      "database changes",
+      "payment failed in production service",
+      "payment failed in production service 2"
+    ],
+    "explanation": "Risk evaluation for payment failed in production service: score 55 and decision 'BLOCKED - CRITICAL RISK'. The system flags this as a high-risk deployment because the change could impact critical services.",
+    "trace": {
+      "risk_reason": "Production environment impact | Payment or checkout workflow affected",
+      "incident_reason": "Observed failure or error signal | Critical payment or checkout disruption | Production impact detected"
+    },
+    "timestamp": 1782247805.0213802
+  },
+  {
+    "id": 29,
+    "input": "Production checkout payment failed after a database migration; users cannot complete purchases.",
+    "risk_score": 100,
+    "risk_reason": "Database or schema change detected | Production environment impact | Payment or checkout workflow affected | High blast radius: production database change | Cross-service dependency with billing or payments",
+    "incident": "CRITICAL INCIDENT",
+    "incident_reason": "Observed failure or error signal | Critical payment or checkout disruption | Production impact detected | Critical database-to-production risk | Customer-facing service impacted in production",
+    "incident_score": 95,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "history_matches": [
+      "\"Detected schema migration + payment service dependency \u2192 high blast radius\"",
+      "database changes",
+      "payment failed in production service ",
+      "payment failed in production service 2",
+      "production error",
+      "database",
+      "production checkout payment failed after a database migration; users cannot complete purchases.",
+      "database prod",
+      "payment failed in production service",
+      "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]"
+    ],
+    "explanation": "Risk evaluation for Production checkout payment failed after a database migration; users cannot complete purchases.: risk score 100 led to 'BLOCKED - CRITICAL RISK'. Incident status: CRITICAL INCIDENT. Signal details: Observed failure or error signal | Critical payment or checkout disruption | Production impact detected | Critical database-to-production risk | Customer-facing service impacted in production. Historical patterns show similar incidents in \"Detected schema migration + payment service dependency \u2192 high blast radius\", database changes. This recommendation reflects the combined impact on production services and rollout safety.",
+    "trace": {
+      "risk_reason": "Database or schema change detected | Production environment impact | Payment or checkout workflow affected | High blast radius: production database change | Cross-service dependency with billing or payments",
+      "incident_reason": "Observed failure or error signal | Critical payment or checkout disruption | Production impact detected | Critical database-to-production risk | Customer-facing service impacted in production"
+    },
+    "timestamp": 1782248088.5958643
+  },
+  {
+    "id": 30,
+    "input": "Deploy payment service change to production; rollback is complex and latency increased for checkout requests.",
+    "risk_score": 75,
+    "risk_reason": "Production environment impact | Payment or checkout workflow affected | Rollback or data migration complexity",
+    "incident": "HIGH INCIDENT",
+    "incident_reason": "Production impact detected | Performance degradation signal | Rollback or data recovery complexity | Customer-facing service impacted in production",
+    "incident_score": 50,
+    "decision": "HUMAN APPROVAL REQUIRED",
+    "history_matches": [
+      "deploy payment service change to production; rollback is complex and latency increased for checkout requests.",
+      "\"Detected schema migration + payment service dependency \u2192 high blast radius\"",
+      "database changes",
+      "payment failed in production service ",
+      "payment failed in production service 2",
+      "production error",
+      "database",
+      "production checkout payment failed after a database migration; users cannot complete purchases.",
+      "database prod",
+      "payment failed in production service",
+      "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]"
+    ],
+    "explanation": "Risk evaluation for Deploy payment service change to production; rollback is complex and latency increased for checkout requests.: risk score 75 led to 'HUMAN APPROVAL REQUIRED'. Incident status: HIGH INCIDENT. Signal details: Production impact detected | Performance degradation signal | Rollback or data recovery complexity | Customer-facing service impacted in production. Historical patterns show similar incidents in deploy payment service change to production; rollback is complex and latency increased for checkout requests., \"Detected schema migration + payment service dependency \u2192 high blast radius\". This recommendation reflects the combined impact on production services and rollout safety.",
+    "trace": {
+      "risk_reason": "Production environment impact | Payment or checkout workflow affected | Rollback or data migration complexity",
+      "incident_reason": "Production impact detected | Performance degradation signal | Rollback or data recovery complexity | Customer-facing service impacted in production"
+    },
+    "timestamp": 1782248103.1576421
+  },
+  {
+    "id": 31,
+    "input": "Roll out a small database schema change to production with a standard rollback plan.",
+    "risk_score": 100,
+    "risk_reason": "Database or schema change detected | Production environment impact | Rollback or data migration complexity | High blast radius: production database change",
+    "incident": "MEDIUM INCIDENT",
+    "incident_reason": "Production impact detected | Critical database-to-production risk | Rollback or data recovery complexity",
+    "incident_score": 45,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "history_matches": [
+      "deploy payment service change to production; rollback is complex and latency increased for checkout requests.",
+      "\"Detected schema migration + payment service dependency \u2192 high blast radius\"",
+      "database changes",
+      "payment failed in production service ",
+      "payment failed in production service 2",
+      "production error",
+      "database",
+      "production checkout payment failed after a database migration; users cannot complete purchases.",
+      "roll out a small database schema change to production with a standard rollback plan.",
+      "database prod",
+      "payment failed in production service",
+      "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]"
+    ],
+    "explanation": "Risk evaluation for Roll out a small database schema change to production with a standard rollback plan.: risk score 100 led to 'BLOCKED - CRITICAL RISK'. Incident status: MEDIUM INCIDENT. Signal details: Production impact detected | Critical database-to-production risk | Rollback or data recovery complexity. Historical patterns show similar incidents in deploy payment service change to production; rollback is complex and latency increased for checkout requests., \"Detected schema migration + payment service dependency \u2192 high blast radius\". This recommendation reflects the combined impact on production services and rollout safety.",
+    "trace": {
+      "risk_reason": "Database or schema change detected | Production environment impact | Rollback or data migration complexity | High blast radius: production database change",
+      "incident_reason": "Production impact detected | Critical database-to-production risk | Rollback or data recovery complexity"
+    },
+    "timestamp": 1782248109.2653453
+  },
+  {
+    "id": 32,
+    "input": "Deploy minor frontend copy change to staging for a marketing banner update.",
+    "risk_score": 0,
+    "risk_reason": "No specific deployment risk indicators found",
+    "incident": "NO INCIDENT DETECTED",
+    "incident_reason": "System healthy",
+    "incident_score": 0,
+    "decision": "AUTO APPROVED",
+    "history_matches": [
+      "deploy payment service change to production; rollback is complex and latency increased for checkout requests.",
+      "\"Detected schema migration + payment service dependency \u2192 high blast radius\"",
+      "database changes",
+      "payment failed in production service ",
+      "payment failed in production service 2",
+      "production error",
+      "database",
+      "production checkout payment failed after a database migration; users cannot complete purchases.",
+      "roll out a small database schema change to production with a standard rollback plan.",
+      "database prod",
+      "payment failed in production service",
+      "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]"
+    ],
+    "explanation": "Risk evaluation for Deploy minor frontend copy change to staging for a marketing banner update.: risk score 0 led to 'AUTO APPROVED'. Incident status: NO INCIDENT DETECTED. Signal details: System healthy. Historical patterns show similar incidents in deploy payment service change to production; rollback is complex and latency increased for checkout requests., \"Detected schema migration + payment service dependency \u2192 high blast radius\". This recommendation reflects the combined impact on production services and rollout safety.",
+    "trace": {
+      "risk_reason": "No specific deployment risk indicators found",
+      "incident_reason": "System healthy"
+    },
+    "timestamp": 1782248112.8408105
+  },
+  {
+    "id": 33,
+    "input": "Roll out a small database schema change to production with a standard rollback plan.",
+    "risk_score": 100,
+    "risk_reason": "Database or schema change detected | Production environment impact | Rollback or data migration complexity | High blast radius: production database change",
+    "incident": "MEDIUM INCIDENT",
+    "incident_reason": "Production impact detected | Critical database-to-production risk | Rollback or data recovery complexity",
+    "incident_score": 45,
+    "decision": "BLOCKED - CRITICAL RISK",
+    "history_matches": [
+      "deploy payment service change to production; rollback is complex and latency increased for checkout requests.",
+      "\"Detected schema migration + payment service dependency \u2192 high blast radius\"",
+      "database changes",
+      "payment failed in production service ",
+      "payment failed in production service 2",
+      "production error",
+      "database",
+      "production checkout payment failed after a database migration; users cannot complete purchases.",
+      "roll out a small database schema change to production with a standard rollback plan.",
+      "database prod",
+      "payment failed in production service",
+      "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]"
+    ],
+    "explanation": "Risk evaluation for Roll out a small database schema change to production with a standard rollback plan.: risk score 100 led to 'BLOCKED - CRITICAL RISK'. Incident status: MEDIUM INCIDENT. Signal details: Production impact detected | Critical database-to-production risk | Rollback or data recovery complexity. Historical patterns show similar incidents in deploy payment service change to production; rollback is complex and latency increased for checkout requests., \"Detected schema migration + payment service dependency \u2192 high blast radius\". This recommendation reflects the combined impact on production services and rollout safety.",
+    "trace": {
+      "risk_reason": "Database or schema change detected | Production environment impact | Rollback or data migration complexity | High blast radius: production database change",
+      "incident_reason": "Production impact detected | Critical database-to-production risk | Rollback or data recovery complexity"
+    },
+    "timestamp": 1782248342.4360273
+  },
+  {
+    "id": 34,
+    "input": "Roll out a small database schema change to production with a standard rollback plan.",
+    "risk_score": 47,
+    "risk_reason": "Database or schema change detected | Production environment impact | Rollback or data migration complexity | High blast radius: production database change | Minor or low-scope change",
+    "incident": "MEDIUM INCIDENT",
+    "incident_reason": "Production impact detected | Critical database-to-production risk | Rollback or data recovery complexity",
+    "incident_score": 45,
+    "decision": "REVIEW RECOMMENDED",
+    "history_matches": [
+      "database",
+      "database changes",
+      "\"Detected schema migration + payment service dependency \u2192 high blast radius\"",
+      "Roll out a small database schema change to production with a standard rollback plan.",
+      "payment failed in production service",
+      "Production checkout payment failed after a database migration; users cannot complete purchases.",
+      "production error",
+      "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]",
+      "payment failed in production service 2",
+      "Deploy payment service change to production; rollback is complex and latency increased for checkout requests.",
+      "payment failed in production service ",
+      "database prod",
+      "roll out a small database schema change to production with a standard rollback plan."
+    ],
+    "explanation": "Risk Factors: Database or schema change, Production deployment, Rollback complexity, Low-scope change\nIncident Signals: Production impact detected | Critical database-to-production risk | Rollback or data recovery complexity\nDecision: REVIEW RECOMMENDED based on a risk score of 47.\nHistory Notes: Similar prior entries found in database, database changes.",
+    "trace": {
+      "risk_reason": "Database or schema change detected | Production environment impact | Rollback or data migration complexity | High blast radius: production database change | Minor or low-scope change",
+      "incident_reason": "Production impact detected | Critical database-to-production risk | Rollback or data recovery complexity"
+    },
+    "timestamp": 1782248644.8372405
+  },
+  {
+    "id": 35,
+    "input": "Roll out a small database schema",
+    "risk_score": 5,
+    "risk_reason": "Database or schema change detected | Minor or low-scope change",
+    "incident": "NO INCIDENT DETECTED",
+    "incident_reason": "System healthy",
+    "incident_score": 0,
+    "decision": "AUTO APPROVED",
+    "history_matches": [
+      "database",
+      "database changes",
+      "\"Detected schema migration + payment service dependency \u2192 high blast radius\"",
+      "Roll out a small database schema change to production with a standard rollback plan.",
+      "payment failed in production service",
+      "Production checkout payment failed after a database migration; users cannot complete purchases.",
+      "roll out a small database schema",
+      "production error",
+      "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]",
+      "payment failed in production service 2",
+      "Deploy payment service change to production; rollback is complex and latency increased for checkout requests.",
+      "payment failed in production service ",
+      "database prod",
+      "roll out a small database schema change to production with a standard rollback plan."
+    ],
+    "explanation": "Risk Factors: Database or schema change, Low-scope change\nIncident Signals: System healthy\nDecision: AUTO APPROVED based on a risk score of 5.\nHistory Notes: Similar prior entries found in database, database changes.",
+    "trace": {
+      "risk_reason": "Database or schema change detected | Minor or low-scope change",
+      "incident_reason": "System healthy"
+    },
+    "timestamp": 1782248692.0261433
+  },
+  {
+    "id": 36,
+    "input": "Deploy payment service change to production; rollback is complex and latency increased for checkout requests.",
+    "risk_score": 52,
+    "risk_reason": "Production environment impact | Payment or checkout workflow affected | Rollback or data migration complexity",
+    "incident": "HIGH INCIDENT",
+    "incident_reason": "Production impact detected | Performance degradation signal | Rollback or data recovery complexity | Customer-facing service impacted in production",
+    "incident_score": 50,
+    "decision": "REVIEW RECOMMENDED",
+    "history_matches": [
+      "database",
+      "database changes",
+      "\"Detected schema migration + payment service dependency \u2192 high blast radius\"",
+      "Roll out a small database schema change to production with a standard rollback plan.",
+      "payment failed in production service",
+      "Production checkout payment failed after a database migration; users cannot complete purchases.",
+      "roll out a small database schema",
+      "production error",
+      "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]",
+      "payment failed in production service 2",
+      "Deploy payment service change to production; rollback is complex and latency increased for checkout requests.",
+      "payment failed in production service ",
+      "database prod",
+      "roll out a small database schema change to production with a standard rollback plan.",
+      "deploy payment service change to production; rollback is complex and latency increased for checkout requests."
+    ],
+    "explanation": "Risk Factors: Production deployment, Customer-facing payment flow, Rollback complexity\nIncident Signals: Production impact detected | Performance degradation signal | Rollback or data recovery complexity | Customer-facing service impacted in production\nDecision: REVIEW RECOMMENDED based on a risk score of 52.\nHistory Notes: Similar prior entries found in database, database changes.",
+    "trace": {
+      "risk_reason": "Production environment impact | Payment or checkout workflow affected | Rollback or data migration complexity",
+      "incident_reason": "Production impact detected | Performance degradation signal | Rollback or data recovery complexity | Customer-facing service impacted in production"
+    },
+    "timestamp": 1782248703.4312644
+  },
+  {
+    "id": 37,
+    "input": "Deploy minor frontend copy change to staging for a marketing banner update.",
+    "risk_score": 0,
+    "risk_reason": "Minor or low-scope change",
+    "incident": "NO INCIDENT DETECTED",
+    "incident_reason": "System healthy",
+    "incident_score": 0,
+    "decision": "AUTO APPROVED",
+    "history_matches": [
+      "database",
+      "database changes",
+      "\"Detected schema migration + payment service dependency \u2192 high blast radius\"",
+      "Roll out a small database schema change to production with a standard rollback plan.",
+      "payment failed in production service",
+      "Production checkout payment failed after a database migration; users cannot complete purchases.",
+      "roll out a small database schema",
+      "production error",
+      "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]",
+      "payment failed in production service 2",
+      "Deploy payment service change to production; rollback is complex and latency increased for checkout requests.",
+      "payment failed in production service ",
+      "database prod",
+      "roll out a small database schema change to production with a standard rollback plan.",
+      "deploy payment service change to production; rollback is complex and latency increased for checkout requests."
+    ],
+    "explanation": "Risk Factors: Low-scope change\nIncident Signals: System healthy\nDecision: AUTO APPROVED based on a risk score of 0.\nHistory Notes: Similar prior entries found in database, database changes.",
+    "trace": {
+      "risk_reason": "Minor or low-scope change",
+      "incident_reason": "System healthy"
+    },
+    "timestamp": 1782251933.1258593
+  },
+  {
+    "id": 38,
+    "input": "",
+    "risk_score": 0,
+    "risk_reason": "No specific deployment risk indicators found",
+    "incident": "NO INCIDENT DETECTED",
+    "incident_reason": "System healthy",
+    "incident_score": 0,
+    "decision": "AUTO APPROVED",
+    "history_matches": [
+      "database",
+      "database changes",
+      "\"Detected schema migration + payment service dependency \u2192 high blast radius\"",
+      "Roll out a small database schema change to production with a standard rollback plan.",
+      "payment failed in production service",
+      "Production checkout payment failed after a database migration; users cannot complete purchases.",
+      "roll out a small database schema",
+      "production error",
+      "Deploy database changes to prod with password=[REDACTED] and token=[REDACTED]",
+      "payment failed in production service 2",
+      "Deploy payment service change to production; rollback is complex and latency increased for checkout requests.",
+      "payment failed in production service ",
+      "database prod",
+      "roll out a small database schema change to production with a standard rollback plan.",
+      "deploy payment service change to production; rollback is complex and latency increased for checkout requests."
+    ],
+    "explanation": "Risk Factors: General deployment change\nIncident Signals: System healthy\nDecision: AUTO APPROVED based on a risk score of 0.\nHistory Notes: Similar prior entries found in database, database changes.",
+    "trace": {
+      "risk_reason": "No specific deployment risk indicators found",
+      "incident_reason": "System healthy"
+    },
+    "timestamp": 1782252988.5875905
   }
 ]
