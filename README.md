@@ -34,7 +34,18 @@ flowchart TD
 
 ## How the agents work
 
+<<<<<<< HEAD
 The project is organized around five specialized agent roles:
+=======
+Clone Repository
+- git clone https://github.com/Muqaddas1617/ai-sre-copilot.git
+- cd ai-sre-copilot
+- 
+Backend
+- FastAPI
+- Python
+- Uvicorn
+>>>>>>> 782e6101b4d52c2c2310372f8f8caee140099f8e
 
 - RiskAnalyzerAgent: evaluates deployment risk using database/schema changes, production impact, payment dependencies, rollback complexity, and time-window signals.
 - IncidentAnalyzerAgent: classifies incident severity using failure signals, production impact, payment/checkout disruption, latency issues, and rollback complexity.
@@ -63,7 +74,14 @@ The project is organized around five specialized agent roles:
 
 ## Local setup
 
+<<<<<<< HEAD
 ### Backend
+=======
+2️⃣ Backend Setup
+-  cd backend
+- pip install -r requirements.txt
+- python -m uvicorn backend.app:app --reload
+>>>>>>> 782e6101b4d52c2c2310372f8f8caee140099f8e
 
 ```bash
 cd backend
@@ -114,3 +132,8 @@ A short demo video can show a deployment request being submitted, the agents ana
 ## Author
 
 Muqaddas Saad
+<<<<<<< HEAD
+=======
+GitHub: https://github.com/Muqaddas1617
+---
+>>>>>>> 782e6101b4d52c2c2310372f8f8caee140099f8e
